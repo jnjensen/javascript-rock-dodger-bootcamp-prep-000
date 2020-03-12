@@ -33,17 +33,17 @@ function createRock(x) {
   rock.style.left = `${x}px`
   var top = 0
   rock.style.top = top
+  
+  rock.style.top = `${top2+=2}px`;
+     if (checkCollision(rock)){
+       return endGame();
+     } if (top2 < GAME_HEIGHT){
+       window.requestAnimationFrame(moveRock);
+     } else {
+       rock.remove();
+     }}
 
-  /**
-   * Now that we have a rock, we'll need to append
-   * it to GAME and move it downwards.
-   */
-
-
-  /**
-   * This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */
+  
   function moveRock() {
     // implement me!
     // (use the comments below to guide you!)
