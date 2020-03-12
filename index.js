@@ -15,7 +15,7 @@ var gameInterval = null
 
 function checkCollision(rock) {
  const top = positionToInteger(rock.style.top)
-  if (top > 360) {
+ if (top > 360) {
     const dodgerLeftEdge = positionToInteger(DODGER.style.left)
 
     // FIXME: The DODGER is 40 pixels wide -- how do we get the right edge?
