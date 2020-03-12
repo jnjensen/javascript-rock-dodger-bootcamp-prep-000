@@ -59,7 +59,7 @@ function endGame() {
   function zeroOut (rock){
     rock.remove();
   }
-  ROCKS.foreach(zeroOut);
+  ROCKS.forEach(zeroOut);
   document.removeEventListener('keydown',moveDodger);
   return alert('YOU LOSE!');
 }
